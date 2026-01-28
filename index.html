@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Color Mobile - Independent mobile app developer creating useful and innovative applications">
+    <title>Color Mobile - Mobile App Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        .main-content {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .app-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .app-card h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .app-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .app-card ul {
+            margin-left: 20px;
+            color: #666;
+        }
+        .app-card ul li {
+            margin-bottom: 5px;
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: #6c757d;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        .contact-info {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: white;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .main-content {
+                padding: 25px;
+            }
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Color Mobile</h1>
+            <p>Independent Mobile App Developer</p>
+        </header>
+
+        <div class="main-content">
+            <section class="section">
+                <h2>About</h2>
+                <p>Welcome to Color Mobile! I'm an independent developer passionate about creating useful and innovative mobile applications. My focus is on building apps that enhance everyday life with simplicity and functionality.</p>
+                <p>I develop apps across various categories, from productivity tools to utility applications, always prioritizing user experience and privacy.</p>
+            </section>
+
+            <section class="section">
+                <h2>Our Apps</h2>
+                <div class="apps-grid">
+                    <div class="app-card">
+                        <div class="app-icon">📍</div>
+                        <h3>GPS Speedometer: Speed Tracker</h3>
+                        <p>Track your speed, distance, and routes with precision. Perfect for driving, cycling, and outdoor activities.</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li>Real-time speed tracking</li>
+                            <li>Distance measurement</li>
+                            <li>Route recording</li>
+                            <li>Multiple speed units</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="app-card">
+                        <div class="app-icon">📱</div>
+                        <h3>More Apps Coming Soon</h3>
+                        <p>Stay tuned for more useful applications from Color Mobile!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Important Links</h2>
+                <div class="links">
+                    <a href="/privacy-policy.html" class="btn">Privacy Policy</a>
+                    <a href="/app-ads.txt" class="btn btn-secondary">app-ads.txt</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><strong>Developer:</strong> Color Mobile</p>
+                    <p><strong>Email:</strong> <a href="mailto:adusoftvn@gmail.com">adusoftvn@gmail.com</a></p>
+                    <p>For support, questions, or feedback about any of our applications, please don't hesitate to reach out.</p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Color Mobile. All rights reserved.</p>
+            <p>Independent Mobile App Developer</p>
+        </footer>
+    </div>
+</body>
+</html>
